@@ -1,5 +1,10 @@
 pipeline{
     agent any
+   
+    tools{
+        java 'java-11'
+        mvn 'maven'
+    }
 
     stages{
         stage('Git-checkout'){
